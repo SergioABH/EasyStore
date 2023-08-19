@@ -1,0 +1,59 @@
+.regret-button {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #productos,
+  #carrito {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  #productos h2,
+  #carrito h2 {
+    margin-top: 0;
+  }
+  
+  #productos select,
+  #productos input,
+  #productos button,
+  #carrito ul,
+  #carrito button {
+    width: 99%;
+    margin-bottom: 10px;
+  }
+  
+  #carritoLista {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #carritoLista li {
+    margin-bottom: 5px;
+  }
+  
+  #realizarVentaBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

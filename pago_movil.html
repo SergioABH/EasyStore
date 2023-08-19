@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pago Móvil</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/pago_movil.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="start-button" href="pagos.html">Regresar</a></li>
+            </ul>
+        </nav>
+      </header>
+      <img class="logo_realizar_venta" src="img/logo2.png" alt="Logo de EasyStore">
+      <style>
+        .logo_realizar_venta {
+        width: 200px;
+        height: auto;
+        margin-top: 10px;
+        margin-left: 560px;
+        }
+      </style>
+  <h1>Pago Móvil</h1>
+  <form1 id="mobile-payment-form">
+    <label for="phone-number">Número de teléfono:</label>
+    <input type="text" id="phone-number" placeholder="Ingrese el número de teléfono" required>
+
+    <label for="amount">Monto a pagar:</label>
+    <input type="number" id="amount" placeholder="Ingrese el monto a pagar" required>
+
+    <button type="submit">Pagar</button>
+  </form1>
+
+  <script src="js/pago_movil.js"></script>
+</body>
+<footer></footer>
+</html>

@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #inventory-report {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  #inventory-report h2 {
+    margin-top: 0;
+  }
+  
+  #generate-report-btn {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #report-results {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  

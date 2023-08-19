@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>EasyStore - Informes y Análisis</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/informe_personalizado.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="start-button" href="informes.html">Regresar</a></li>
+            </ul>
+        </nav>
+      </header>
+      <img class="logo_realizar_venta" src="img/logo2.png" alt="Logo de EasyStore">
+      <style>
+        .logo_realizar_venta {
+        width: 200px;
+        height: auto;
+        margin-top: 10px;
+        margin-left: 560px;
+        }
+      </style>
+  <h1>Informes y Análisis</h1>
+  <footer></footer>
+  <div id="custom-report">
+    <h2>Informe Personalizado</h2>
+    <form id="report-form">
+      <label for="date-range">Rango de Fechas:</label>
+      <input type="date" id="date-range" name="date-range">
+      
+      <label for="category">Categoría de Productos:</label>
+      <select id="category" name="category">
+        <option value="">Seleccione una opción</option>
+        <option value="electronics">Electrónicos</option>
+        <option value="clothing">Ropa</option>
+        <option value="home">Hogar</option>
+      </select>
+      
+      <label for="location">Ubicación:</label>
+      <select id="location" name="location">
+        <option value="">Seleccione una opción</option>
+        <option value="store">Tienda</option>
+        <option value="warehouse">Almacén</option>
+      </select>
+      
+      <button type="submit">Generar Informe</button>
+    </form>
+    
+    <div id="report-results"></div>
+  </div>
+  
+  <script src="js/Informe_personalizado.js"></script>
+</body>
+<footer></footer>
+</html>

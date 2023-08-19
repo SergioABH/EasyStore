@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EasyStore - Realizar Venta</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/realizar_venta.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="start-button" href="ventas.html">Regresar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img class="logo_realizar_venta" src="img/logo2.png" alt="Logo de EasyStore">
+    <style>
+        .logo_realizar_venta {
+            width: 200px;
+            height: auto;
+            margin-top: 10px;
+            margin-left: 560px;
+        }
+    </style>
+    <h1>Realizar Venta</h1>
+    <div id="productos">
+        <h2>Productos</h2>
+        <select id="productoSelect">
+            <option value="">Seleccionar producto</option>
+        </select>
+        <input type="number" id="cantidadInput" placeholder="Cantidad">
+        <button id="agregarBtn">Agregar al carrito</button>
+    </div>
+
+    <div id="carrito">
+        <h2>Carrito</h2>
+        <ul id="carritoLista">
+        </ul>
+        <div id="carritoTotal">
+            <p id="total"></p>
+            <button id="vistaPreviaBtn">Vista previa de la factura</button>
+            <button id="realizarVentaBtn">Realizar Venta</button>
+        </div>
+    </div>
+
+    <script src="js/realizar_venta.js"></script>
+    <script src="js/vista_previa_factura.js"></script>
+</body>
+<footer></footer>
+</html>

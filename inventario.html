@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyStore - Gestión de inventario</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/movil.css">
+  <link rel="stylesheet" type="text/css" href="css/funciones.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a class="start-button" href="inicio.html">Inicio</a></li>
+        </ul>
+    </nav>
+  </header>
+  <img class="logo-image2" src="img/logo2.png" alt="Logo de EasyStore">
+  <main>
+    <div class="product-section">
+    <h1 class="title">Gestión de Inventario</h1>
+    <div class="inventary-container">
+      <p class="store-description">En nuestra página de gestión de inventario, podrás agregar nuevos productos, proporcionando información relevante como el nombre, descripción, categoría, precio y cantidad disponible. Además, podrás editar la información de los productos existentes en caso de cambios o actualizaciones.</p>
+    </div>
+    <footer>
+    </footer>
+    <h2>Lista de productos</h2>
+    <div id="productos-lista"></div>
+
+    <div id="botones">
+      <button id="btn-agregar">Agregar producto</button>
+      <button id="btn-ver">Ver detalles</button>
+      <button id="btn-editar">Editar producto</button>
+      <button id="btn-eliminar">Eliminar producto</button>
+      <div id="buscar-container">
+        <input type="text" id="buscar" placeholder="Buscar por nombre o código">
+      </div>
+    </div>
+  
+    <div id="formulario-container" style="display: none;">
+      <h2>Agregar producto</h2>
+      <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre del producto">
+        <input type="text" id="codigo" placeholder="Código del producto">
+        <input type="text" id="descripcion" placeholder="Descripción del producto">
+        <input type="number" id="precio" placeholder="Precio de venta">
+        <input type="number" id="cantidad" placeholder="Cantidad disponible en inventario">
+        <button type="submit">Agregar</button>
+        <button type="button" id="btn-cancelar">Cancelar</button>
+      </form>
+    </div>
+  
+    <script src="js/inventario.js"></script>
+  </div>
+  </main>
+  
+  <footer>
+  </footer>
+</body>
+</html>

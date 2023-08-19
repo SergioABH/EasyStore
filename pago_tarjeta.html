@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pago con Tarjeta de Crédito</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/pago_tarjeta.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="start-button" href="pagos.html">Regresar</a></li>
+            </ul>
+        </nav>
+      </header>
+      <img class="logo_realizar_venta" src="img/logo2.png" alt="Logo de EasyStore">
+      <style>
+        .logo_realizar_venta {
+        width: 200px;
+        height: auto;
+        margin-top: 10px;
+        margin-left: 560px;
+        }
+      </style>
+  <h1>Pago con Tarjeta de Crédito</h1>
+  <form id="payment-form">
+    <label for="card-number">Número de tarjeta:</label>
+    <input type="text" id="card-number" placeholder="Ingrese el número de tarjeta" required>
+
+    <label for="expiration-date">Fecha de vencimiento:</label>
+    <input type="text" id="expiration-date" placeholder="MM/AA" required>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" placeholder="CVV" required>
+
+    <label for="cardholder-name">Nombre del titular:</label>
+    <input type="text" id="cardholder-name" placeholder="Ingrese el nombre del titular" required>
+
+    <button type="submit">Pagar</button>
+  </form>
+
+  <script src="js/pago_tarjeta.js"></script>
+</body>
+<footer></footer>
+</html>

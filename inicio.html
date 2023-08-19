@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyStore - Inicio</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/movil.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="menu-toggle">☰</div>
+      <ul class="nav-list">
+        <li><a href="inventario.html">Gestión de Inventario</a></li>
+        <li><a href="ventas.html">Ventas y Facturación</a></li>
+        <li><a href="clientes.html">Administración de Clientes</a></li>
+        <li><a href="informes.html">Informes y Análisis</a></li>
+        <li><a href="pagos.html">Pagos</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="logo-title-container">
+      <img class="logo-image" src="img/logo2.png" alt="Logo de EasyStore">
+      <h1>Bienvenido a EasyStore</h1>
+    </div>
+    <div class="description-container">
+      <p class="store-description">Este softaware es una solución para la administración de la tienda EasyStore, diseñada para facilitar la gestión eficiente de tu negocio. Nuestra plataforma intuitiva y completa te brinda todas las herramientas necesarias para administrar inventarios, realizar ventas, generar informes y analizar el rendimiento de tu tienda. Con el sistema de EasyStore, los administradores de la tienda pueden optimizar sus operaciones, mejorar la toma de decisiones y aumentar la productividad.</p>
+      <p class="store-description">¡Simplifica tu trabajo diario y lleva tu tienda al siguiente nivel con EasyStore!</p>
+    </div>
+  </main>
+  
+  <img class="imagen-inicio" src="img/inicio.jpg" alt="Imagen 1">
+  
+  <footer>
+    <p>Derechos de autor &copy; 2023 EasyStore. Todos los derechos reservados.</p>
+  </footer>
+  
+  <script>
+    var imagenes = [
+      "img/inicio.jpg",
+      "img/inventario2.jpg",
+      "img/ventas.png",
+      "img/clientes.jpg",
+      "img/informe2.jpg"
+    ];
+
+    var imagenIndex = 0;
+    var imagenElement = document.querySelector(".imagen-inicio");
+
+    function cambiarImagen() {
+      imagenElement.src = imagenes[imagenIndex];
+      imagenIndex = (imagenIndex + 1) % imagenes.length;
+    }
+
+    cambiarImagen();
+
+    setInterval(cambiarImagen, 5000);
+    
+    // Agregar el comportamiento del menú desplegable
+    var menuToggle = document.querySelector(".menu-toggle");
+    var navList = document.querySelector(".nav-list");
+    
+    menuToggle.addEventListener("click", function() {
+      navList.classList.toggle("active");
+    });
+  </script>
+  
+</body>
+</html>

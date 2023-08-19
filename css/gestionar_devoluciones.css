@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #returns-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  #returns-list h2 {
+    margin-top: 0;
+  }
+  
+  #returns-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #returns-items li {
+    margin-bottom: 10px;
+  }
+  

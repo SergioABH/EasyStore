@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <title>EasyStore - Administración de Clientes</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/funciones.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a class="start-button" href="inicio.html">Inicio</a></li>
+        </ul>
+    </nav>
+  </header>
+  <img class="logo-image2" src="img/logo2.png" alt="Logo de EasyStore">
+  <main>
+    <h1>Administración de Clientes</h1>
+    <div class="inventary-container">
+      <p class="store-description">En nuestra página de administración de clientes, podrás crear perfiles individuales para cada uno de tus clientes, donde podrás ingresar y actualizar su información personal, como nombre, dirección, número de contacto y correo electrónico. Esto te permitirá tener un registro completo y actualizado de tus clientes, lo que facilitará la comunicación y el seguimiento de sus necesidades. </p>
+    </div>
+    <footer>
+    </footer>
+    <h1>Lista de clientes</h1>
+  <div id="clientes-lista"></div>
+
+  <div id="botones">
+    <button id="btn-agregar">Agregar cliente</button>
+    <button id="btn-ver">Ver cliente</button>
+    <button id="btn-editar">Editar cliente</button>
+    <button id="btn-eliminar">Eliminar cliente</button>
+  </div>
+
+  <div id="formulario-container" style="display: none;">
+    <h2>Agregar cliente</h2>
+    <form id="formulario">
+      <input type="text" id="nombre" placeholder="Nombre completo del cliente">
+      <input type="email" id="correo" placeholder="Dirección de correo electrónico">
+      <input type="text" id="telefono" placeholder="Número de teléfono">
+      <input type="text" id="direccion" placeholder="Dirección de residencia o de entrega">
+      <input type="text" id="categorias" placeholder="Categorías de productos de interés (opcional)">
+      <input type="text" id="marcas" placeholder="Marcas preferidas (opcional)">
+      <button type="submit">Agregar</button>
+      <button type="button" id="btn-cancelar">Cancelar</button>
+    </form>
+  </div>
+
+  <script src="js/clientes.js"></script>
+  </main>
+
+  <footer>
+  </footer>
+</body>
+</html>
