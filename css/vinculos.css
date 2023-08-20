@@ -16,9 +16,4 @@
   display: block; /* Cambia a bloque para que ocupen todo el ancho */
 }
 
-.imagenVenta {
-  width: 10px; /* Ajusta el tamaño de las imágenes */
-  height: auto;
-  margin: 0 auto; /* Centra las imágenes horizontalmente */
-}
 

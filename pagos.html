@@ -2,8 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-  <title>EasyStore - Pagos</title>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyStore - Pagos</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/movil.css">
+    <link rel="stylesheet" type="text/css" href="css/vinculos.css">
 </head>
 <body>
   <header>
@@ -15,24 +18,53 @@
   </header>
   <img class="logo-image2" src="img/logo2.png" alt="Logo de EasyStore">
   <main>
-    <h1>Pagos</h1>
+    <h1 class="title">Pagos</h1>
     <div class="inventary-container">
       <p class="store-description">La sección de pagos en nuestra página te brinda una plataforma segura y conveniente donde podrás encontrar diferentes métodos de pago disponibles, como tarjetas de crédito, débito, transferencias bancarias y pagos móviles. Esto brinda flexibilidad a tus clientes al permitirles elegir el método de pago que les resulte más conveniente y familiar. </p>
     </div>
     <footer>
     </footer>
     <link rel="stylesheet" type="text/css" href="css/vinculos.css">
-    <div class="container">
+    <div class="alineacion">
       <div class="payment-option">
         <a href="pago_tarjeta.html">
-          <img id="tarjeta-img" src="img/tarjeta.png" alt="Pago con tarjeta de crédito">
-          <h2>Pago con tarjeta de crédito</h2>
+          <img class="imagenTar" src="img/tarjeta.png" alt="Pago con tarjeta de crédito">
+          <style>
+            .imagenTar {
+              width: 290px; /* Ajusta el tamaño de las imágenes */
+              height: auto;
+              margin-left: 50px;
+            }
+          </style>
+          <h2 class="titulo">Pago con tarjeta de crédito</h2>
+          <style>
+            .titulo {
+               margin-top: -5px; /* Espaciado superior a los títulos */
+               margin-left: 40px;
+               text-align: center; /* Alinea los títulos al centro horizontal */
+            }
+          </style>
         </a>
       </div>
+      <footer></footer>
       <div class="payment-option">
         <a href="pago_movil.html">
-          <img class="movil-img" src="img/movil.png" alt="Pago móvil">
-          <h2>Pago móvil</h2>
+          <img class="imagenMov" src="img/movil.png" alt="Pago móvil">
+          <style>
+            .imagenMov {
+              width: 200px; /* Ajusta el tamaño de las imágenes */
+              height: auto;
+              margin-left: 50px;
+            }
+          </style>
+          <h2 class="titulo2">Pago móvil</h2>
+          <style>
+            .titulo2 {
+               margin-top: -5px; /* Espaciado superior a los títulos */
+               margin-left: 40px;
+               text-align: center; /* Alinea los títulos al centro horizontal */
+            }
+          </style>
         </a>
       </div>
     </div>

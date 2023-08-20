@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>EasyStore - Realizar Venta</title>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="css/realizar_venta.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyStore - Realizar Venta</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/movil.css">
+    <link rel="stylesheet" type="text/css" href="css/realizar_venta.css">
 </head>
 <body>
     <header>
@@ -13,18 +16,29 @@
             </ul>
         </nav>
     </header>
-    <img class="logo_realizar_venta" src="img/logo2.png" alt="Logo de EasyStore">
+    <img class="logo-image5" src="img/logo2.png" alt="Logo de EasyStore">
     <style>
-        .logo_realizar_venta {
+        .logo-image5 {
             width: 200px;
             height: auto;
-            margin-top: 10px;
-            margin-left: 560px;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            float: right;
+            margin-right: 70px;
         }
     </style>
     <h1>Realizar Venta</h1>
+    <footer></footer>
     <div id="productos">
-        <h2>Productos</h2>
+        <h2 class="tituloPro">Productos</h2>
+        <style>
+            .tituloPro {
+                font-size: 20px;
+                text-align: center;
+                margin-top: 120px;
+            }
+        </style>
         <select id="productoSelect">
             <option value="">Seleccionar producto</option>
         </select>
@@ -33,7 +47,14 @@
     </div>
 
     <div id="carrito">
-        <h2>Carrito</h2>
+        <h2 class="tituloCa">Carrito</h2>
+        <style>
+            .tituloCa {
+                font-size: 20px;
+                text-align: center;
+                margin-top: 120px;
+            }
+        </style>
         <ul id="carritoLista">
         </ul>
         <div id="carritoTotal">
